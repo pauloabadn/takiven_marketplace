@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100;
+    background-color: $color-principal;
+    padding: 1% 10%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.2fr 2fr 0.4fr 0.4fr;
+    align-items: center;
+    text-align: center;
+    form{
+        .btn-outline-success{
+            border: solid 2px $color-blanco;
+            color: $color-blanco;
+            &:hover{
+                background-color: $color-secundario;
+                border: solid 2px $color-secundario;
+                transition: ease 1s;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $color-blanco;
+        font-size: 16px;
+        text-align: center;
+        align-items: center;
+        &:hover{
+            color:$color-secundario;
+            transition: ease 1s;
+        }
+        i{
+            font-size: 26px;
+            padding-right: 6px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
