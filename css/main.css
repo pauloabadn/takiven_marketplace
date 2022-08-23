@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+.active {
+  display: block; }
+
 nav {
   width: 100;
   background-color: #3FD077;
@@ -32,41 +35,52 @@ nav {
     nav a img {
       width: 100%; }
 
-main .contenedor {
-  padding-top: 2%; }
-  main .contenedor .principal {
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 0.3fr 1fr 0.3fr; }
-    main .contenedor .principal .caracteristicas {
+header .menu {
+  width: 1000px;
+  height: 300px;
+  background-color: greenyellow;
+  margin: 10px auto;
+  z-index: 1000;
+  display: none; }
+
+main {
+  z-index: 2; }
+  main .contenedor {
+    z-index: 3;
+    padding-top: 2%; }
+    main .contenedor .principal {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding: 0% 10%;
-      gap: 15px;
-      margin-bottom: 10px; }
-      main .contenedor .principal .caracteristicas .item {
+      justify-content: center;
+      grid-template-rows: 0.3fr 1fr 0.3fr; }
+      main .contenedor .principal .caracteristicas {
         display: grid;
-        grid-template-columns: 0.5fr 1fr;
-        align-items: center;
-        text-align: center;
-        justify-items: center; }
-        main .contenedor .principal .caracteristicas .item img {
-          width: 60%; }
-        main .contenedor .principal .caracteristicas .item .texto h2 {
-          font-size: 20px; }
-        main .contenedor .principal .caracteristicas .item .texto p {
-          font-size: 14px; }
-    main .contenedor .principal .carouselExampleIndicators {
-      width: 100%; }
-    main .contenedor .principal .marcas {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      padding: 0 10%;
-      margin-top: 20px; }
-      main .contenedor .principal .marcas .item {
-        width: 150px;
-        height: 150px;
-        justify-items: center;
-        align-items: center; }
-        main .contenedor .principal .marcas .item a img {
-          width: 100%; }
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0% 10%;
+        gap: 15px;
+        margin-bottom: 10px; }
+        main .contenedor .principal .caracteristicas .item {
+          display: grid;
+          grid-template-columns: 0.5fr 1fr;
+          align-items: center;
+          text-align: center;
+          justify-items: center; }
+          main .contenedor .principal .caracteristicas .item img {
+            width: 60%; }
+          main .contenedor .principal .caracteristicas .item .texto h2 {
+            font-size: 20px; }
+          main .contenedor .principal .caracteristicas .item .texto p {
+            font-size: 14px; }
+      main .contenedor .principal .carouselExampleIndicators {
+        width: 100%; }
+      main .contenedor .principal .marcas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 0 10%;
+        margin-top: 20px; }
+        main .contenedor .principal .marcas .item {
+          width: 150px;
+          height: 150px;
+          justify-items: center;
+          align-items: center; }
+          main .contenedor .principal .marcas .item a img {
+            width: 100%; }
