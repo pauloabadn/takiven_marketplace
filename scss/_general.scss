@@ -125,12 +125,12 @@ main{
                 }
             }
         }
-        .categoria1{
+        .categoria{
             padding: 0 10%;
             margin: 5% 0;
             .title{
                 display: grid;
-                grid-template-columns: 0.1fr 0.1fr 1fr 0.12fr;
+                grid-template-columns: 0.1fr 0.1fr 1fr 0.15fr;
                 align-items: center;
                 justify-content: center;
                 justify-items: center;
@@ -149,27 +149,45 @@ main{
                     }
                 }
             }
+            .dos{
+                grid-template-columns: 0.1fr 0.fr 1fr 0.18fr;  
+            }
+            .tres{
+                grid-template-columns: 0.1fr 0.1fr 1fr 0.18fr;  
+            }
             .contenido{
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 gap: 10px;
                 margin-top: 20px;
                 .item{
                     width: 100%;
                     height: 400px;
                     text-align: center;
-                    h3{
-                        font-size: 24px;
-                    }
-                    .cont-img{
+                    .cont{
                         width: 100%;
-                        height: 250px;
+                        height: 100%;
                         border: solid #34A560 1px;
-                        border-radius: 5%;
+                        border-radius: 2%;
+                        display: grid;
+                        justify-items: center;
+                        align-items: center;;
+                        .img{
+                            width: 90%;
+                            height: 220px;
+                        }
+                        h3{
+                            font-size: 18px;
+                            span{
+                                text-align: end;
+                            }
+                        }
                     }
                     .cont-text{
                         display: grid;
-                        grid-template-columns: 1fr 1fr;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        grid-gap: 5px;
                         align-items: center;
                         justify-items: center;
                         padding: 0 6%;
@@ -177,7 +195,7 @@ main{
                             margin-bottom: 0;
                         }
                         div{
-                            width: 80%;
+                            width: 200%;
                             height: 40px;
                             border-radius: 10px;
                             color: $c4;
@@ -186,7 +204,7 @@ main{
                             justify-content: center;
                         }
                         .precio{
-                            background-color:#CC0101 ;
+                            background-color:#eceef0 ;
                             text-decoration:line-through;
 
                         }
