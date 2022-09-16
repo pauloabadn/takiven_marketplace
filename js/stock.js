@@ -63,19 +63,6 @@ const sneakers =
         talle: "L",
         img: '/public/images/buzo.jpg',
         cantidad:1
-    },
-    
-    {
-        id: 6,
-        marca: "JosePau",
-        nombre: "Buzo 2",
-        tipo: "buzo",
-        desc: "Un buzo que re va con vos",
-        precio: 1200,
-        oferta: 790.99,
-        talle: "L",
-        img: '/public/images/buzo.jpg',
-        cantidad:1
     }
 ];
 
