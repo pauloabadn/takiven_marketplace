@@ -20,11 +20,22 @@
                 <input class="form-control me-2" type="search" placeholder="¿Que te llevas hoy?" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Encontrar</button>
             </form>
-            <i class="fa-solid fa-circle-user"></i>
+            <i class="fa-solid fa-circle-user sesionOpen"></i>
             <i class="fa-solid fa-basket-shopping"></i>
         </nav>
-        <div class="menu">
-            <i class="fa-solid fa-circle-xmark burgerClose"></i>
+        <div class="subMenu">
+            <div class="menu">
+                <i class="fa-solid fa-circle-xmark burgerClose"></i>
+            </div>
+            <div class="newsesion">
+                <h3>- Inicia tu sesion -</h3>
+                <form id="loginform">
+                    <input type="text" name="usuario" placeholder="E-Mail" required="">
+                    <input type="password" name="password" placeholder="Contraseña" required="">
+                    <button type="submit" title="Ingresar" name="Ingresar">Ingresar</button>
+                    <button class="registrar" type="submit" title="Ingresar" name="Ingresar">Crear Cuenta</button>
+                </form>
+            </div>
         </div>
     </header>
     <main>
@@ -113,189 +124,40 @@
                     </div>
                 </div>
             </div>
-            <div class="categoria">
+            <div class="categoria1">
                 <div class="title">
-                    <img src="imagenes/sneakers.png" alt="">
+                    <img src="imagenes/categorias/sneakers.png" alt="">
                     <h2>Sneakers</h2>
                     <div></div>
                     <i class="fa-solid fa-rocket"> Ver Mas</i>
                 </div>
-                <div class="contenido">
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contenido" id="contenido">
+
                 </div>
             </div>
-            <div class="categoria">
+            <div class="categoria1">
                 <div class="title dos">
-                    <img src="imagenes/gamer.png" alt="">
+                    <img src="imagenes/categorias/gamer.png" alt="">
                     <h2>Zona Gamer</h2>
                     <div></div>
                     <i class="fa-solid fa-rocket"> Ver Mas</i>
                 </div>
-                <div class="contenido">
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contenido" id="contgamer">
                 </div>
             </div>
-            <div class="categoria">
+            <div class="categoria1">
                 <div class="title tres">
-                    <img src="imagenes/phone (2).png" alt="">
+                    <img src="imagenes/categorias/phone (2).png" alt="">
                     <h2>SmartPhone</h2>
                     <div></div>
                     <i class="fa-solid fa-rocket"> Ver Mas</i>
                 </div>
-                <div class="contenido">
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="cont">
-                            <div class="img"></div>
-                            <h3><span>Marca </span> <br> Nombre del Producto</h3>
-                            <div class="cont-text">
-                                <div class="precio"><p>S/160.00</p></div>
-                                <div class="oferta"><p>S/120.00</p></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="contenido" id="contenido">
                 </div>
             </div>
-            <div class="categoria">
+            <div class="categoria1">
                 <div class="title tres">
-                    <img src="imagenes/pc.png" alt="">
+                    <img src="imagenes/categorias/pc.png" alt="">
                     <h2>Computacion</h2>
                     <div></div>
                     <i class="fa-solid fa-rocket"> Ver Mas</i>
@@ -353,9 +215,9 @@
                     </div>
                 </div>
             </div>
-            <div class="categoria">
+            <div class="categoria1">
                 <div class="title cuatro">
-                    <img src="imagenes/cesta.png" alt="">
+                    <img src="imagenes/categorias/cesta.png" alt="">
                     <h2>Supermercado</h2>
                     <div></div>
                     <i class="fa-solid fa-rocket"> Ver Mas</i>
@@ -413,9 +275,9 @@
                     </div>
                 </div>
             </div>
-            <div class="categoria">
+            <div class="categoria1">
                 <div class="title cinco">
-                    <img src="imagenes/dog.png" alt="">
+                    <img src="imagenes/categorias/cat.png" alt="">
                     <h2>Mascota</h2>
                     <div></div>
                     <i class="fa-solid fa-rocket"> Ver Mas</i>
@@ -475,7 +337,67 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div class="contenedor">
+            <div class="cont1">
+                <div class="item"><i class="fa-solid fa-circle-info"></i><p>Acerca de Nosotros</p></div>
+                <div class="item"><i class="fa-solid fa-file-signature"></i><p>Terminos y Condiciones</p></div>
+                <div class="item"><i class="fa-sharp fa-solid fa-user-shield"></i><p>Politica de Privacidad</p></div>
+                <div class="item"><i class="fa-solid fa-person-walking-arrow-loop-left"></i><p>Cambios y Devoluciones</p></div>
+                <div class="item"><i class="fa-solid fa-tag"></i><p>Promociones y mas</p></div>
+            </div>
+            <div class="cont2">
+                <div class="item1">
+                    <img src="imagenes/logo2.png" alt="">
+                    <p>Somos un Marketplace online donde encontrarás la selección más grande de productos de las mejores tiendas del Perú.</p>
+                </div>
+                <div class="item2">
+                    <div class="cont-text" >
+                        <h3>¿Necesitas Ayuda?</h3>
+                        <p>Conversa con nosotros de lunes a viernes de 9:00 am a 9:00pm y sábado de 9:00 am a 6:00 pm.</p>
+                    </div>
+                    <div class="cont-text2">
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i>Llamanos al <span>(01) 679-9828</span></li>
+                            <li><i class="fa-solid fa-envelope"></i>Escribenos <span>hola@takiven.com.pe</span></li>
+                            <li><i class="fa-solid fa-truck-fast"></i>Sigue tu pedido en <span>DINET</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="cont-text">
+                        <h3>¿Quieres vender en Takiven?</h3>
+                        <p>Conoce los beneficios y<span> dejános tus datos</span></p>
+                    </div>
+                    <div class="cont-text2">
+                        <h4>Siguenos:</h4>
+                        <ul>
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-square-instagram"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cont3">
+                <div class="pagos">
+                    <p>Metodos de Pago:</p>
+                    <ul>
+                        <li><img src="imagenes/pagos/visa.png" alt=""></li>
+                        <li><img src="imagenes/pagos/mastercard1.png" alt=""></li>
+                        <li><img src="imagenes/pagos/unionpay.png" alt=""></li>
+                        <li><img src="imagenes/pagos/amex.png" alt=""></li>
+                        <li><img src="imagenes/pagos/diner.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="pasarela">
+                    <p>Pagos seguros con:</p>
+                    <img src="imagenes/pagos/culqui.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/stock.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
