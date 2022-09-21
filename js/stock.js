@@ -9,7 +9,7 @@ const sneakers =
         precio: 1200.99,
         oferta: 599.99,
         talle: "L",
-        img: '/public/images/buzo.jpg',
+        img: '',
         cantidad:1
     },
 
@@ -22,7 +22,7 @@ const sneakers =
         precio: 500.99,
         oferta: 250.99,
         talle: "L",
-        img: '/public/images/remera.jpg',
+        img: '',
         cantidad:1
     },
 
@@ -35,7 +35,7 @@ const sneakers =
         precio: 900.99,
         oferta: 490.99,
         talle: "S",
-        img: '/public/images/camisa.jpg',
+        img: '',
         cantidad:1
     },
 
@@ -48,7 +48,7 @@ const sneakers =
         precio: 1600.99,
         oferta: 840.99,
         talle: "L",
-        img: '/public/images/pantalon.jpg',
+        img: '',
         cantidad:1
     },
 
@@ -61,7 +61,20 @@ const sneakers =
         precio: 1200,
         oferta: 790.99,
         talle: "L",
-        img: '/public/images/buzo.jpg',
+        img: '',
+        cantidad:1
+    },
+    
+    {
+        id: 6,
+        marca: "JosePau",
+        nombre: "Buzo 2",
+        tipo: "buzo",
+        desc: "Un buzo que re va con vos",
+        precio: 1200,
+        oferta: 790.99,
+        talle: "L",
+        img: '',
         cantidad:1
     }
 ];
@@ -77,7 +90,7 @@ const gamer =
         precio: 1200.99,
         oferta: 599.99,
         talle: "L",
-        img: '/public/images/buzo.jpg',
+        img: '',
         cantidad:1
     },
 
@@ -90,7 +103,7 @@ const gamer =
         precio: 500.99,
         oferta: 250.99,
         talle: "L",
-        img: '/public/images/remera.jpg',
+        img: '',
         cantidad:1
     },
 
@@ -103,7 +116,7 @@ const gamer =
         precio: 900.99,
         oferta: 490.99,
         talle: "S",
-        img: '/public/images/camisa.jpg',
+        img: '',
         cantidad:1
     },
 
@@ -116,7 +129,7 @@ const gamer =
         precio: 1600.99,
         oferta: 840.99,
         talle: "L",
-        img: '/public/images/pantalon.jpg',
+        img: '',
         cantidad:1
     },
 
@@ -129,7 +142,7 @@ const gamer =
         precio: 1200,
         oferta: 790.99,
         talle: "L",
-        img: '/public/images/buzo.jpg',
+        img: '',
         cantidad:1
     }
 ];

@@ -18,13 +18,12 @@
 //    }
 //});
 
-
 const contenedor = document.getElementById('contenido');
 
 sneakers.forEach( producto => {
 
     const div = document.createElement('div');
-    div.classList.add('item');
+    div.classList.add('item2');
 
     div.innerHTML = `
                         <div class="cont">
@@ -38,6 +37,9 @@ sneakers.forEach( producto => {
     `;
     contenedor.appendChild(div);
 });
+
+const flechaDerecha = document.getElementsByClassName('adelante');
+
 
 const contgamer = document.getElementById('contgamer');
 gamer.forEach( producto => {
@@ -57,3 +59,4 @@ gamer.forEach( producto => {
     `;
     contgamer.appendChild(div);
 });
+
