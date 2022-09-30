@@ -177,6 +177,8 @@ main {
             main .contenedor .categoria1 .contenido .item .cont .img {
               width: 90%;
               height: 220px; }
+              main .contenedor .categoria1 .contenido .item .cont .img img {
+                width: 100%; }
             main .contenedor .categoria1 .contenido .item .cont h3 {
               font-size: 18px; }
               main .contenedor .categoria1 .contenido .item .cont h3 span {
