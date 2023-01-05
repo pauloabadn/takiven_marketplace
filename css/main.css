@@ -134,7 +134,8 @@ main {
             width: 100%; }
     main .contenedor .categoria1 {
       padding: 0 10%;
-      margin: 5% 0; }
+      margin-top: 2%;
+      margin-bottom: 1%; }
       main .contenedor .categoria1 .title {
         display: grid;
         grid-template-columns: 0.1fr 0.1fr 1fr 0.15fr;
@@ -156,67 +157,6 @@ main {
         grid-template-columns: 0.1fr 0.25fr 1fr 0.18fr; }
       main .contenedor .categoria1 .tres {
         grid-template-columns: 0.1fr 0.1fr 1fr 0.18fr; }
-      main .contenedor .categoria1 .contenido {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 10px;
-        margin-top: 20px; }
-        main .contenedor .categoria1 .contenido .item {
-          width: 100%;
-          height: 400px;
-          text-align: center; }
-          main .contenedor .categoria1 .contenido .item .cont {
-            width: 100%;
-            height: 100%;
-            border: solid #34A560 1px;
-            border-radius: 2%;
-            display: grid;
-            justify-items: center;
-            align-items: center; }
-            main .contenedor .categoria1 .contenido .item .cont .img {
-              width: 90%;
-              height: 220px; }
-              main .contenedor .categoria1 .contenido .item .cont .img img {
-                width: 100%; }
-            main .contenedor .categoria1 .contenido .item .cont h3 {
-              font-size: 18px; }
-              main .contenedor .categoria1 .contenido .item .cont h3 span {
-                text-align: end; }
-          main .contenedor .categoria1 .contenido .item .cont-text {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            grid-gap: 40px;
-            align-items: center;
-            justify-items: center;
-            padding: 0 6%; }
-            main .contenedor .categoria1 .contenido .item .cont-text p {
-              margin-bottom: 0; }
-            main .contenedor .categoria1 .contenido .item .cont-text div {
-              width: 150%;
-              height: 40px;
-              border-radius: 10px;
-              color: white;
-              display: flex;
-              align-items: center;
-              justify-content: center; }
-            main .contenedor .categoria1 .contenido .item .cont-text .precio {
-              background-color: #eceef0;
-              text-decoration: line-through; }
-            main .contenedor .categoria1 .contenido .item .cont-text .oferta {
-              font-weight: 500;
-              background-color: #29E197; }
-          main .contenedor .categoria1 .contenido .item .agregar {
-            background-color: transparent;
-            border: #29E197 solid 1px;
-            width: 60%;
-            padding: 5%;
-            border-radius: 20px;
-            color: #29E197; }
-            main .contenedor .categoria1 .contenido .item .agregar p {
-              font-weight: 600;
-              margin: 0; }
 
 footer .contenedor {
   display: grid;
@@ -305,3 +245,76 @@ footer .contenedor {
       footer .contenedor .cont3 .pasarela img {
         width: 20%;
         padding-left: 10px; }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 0.1fr;
+  margin: 2% 0; }
+
+.swiper-slide {
+  width: 100%;
+  height: 400px;
+  text-align: center; }
+  .swiper-slide .cont {
+    width: 100%;
+    height: 100%;
+    border: solid #34A560 1px;
+    border-radius: 2%;
+    display: grid;
+    justify-items: center;
+    align-items: center; }
+    .swiper-slide .cont .img {
+      width: 90%;
+      height: 220px;
+      margin: 10px 0px; }
+      .swiper-slide .cont .img img {
+        border-radius: 10px;
+        width: 100%; }
+    .swiper-slide .cont h3 {
+      font-size: 18px; }
+      .swiper-slide .cont h3 span {
+        text-align: end; }
+  .swiper-slide .cont-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    justify-items: center;
+    padding: 0 6%;
+    margin-bottom: 10px; }
+    .swiper-slide .cont-text p {
+      margin-bottom: 0; }
+    .swiper-slide .cont-text div {
+      width: 150%;
+      height: 40px;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .swiper-slide .cont-text .precio {
+      background-color: #eceef0;
+      text-decoration: line-through; }
+    .swiper-slide .cont-text .oferta {
+      font-weight: 500;
+      background-color: #29E197; }
+  .swiper-slide .agregar {
+    background-color: transparent;
+    border: #29E197 solid 1px;
+    width: 60%;
+    padding: 5%;
+    border-radius: 20px;
+    color: #29E197;
+    margin-bottom: 15px; }
+    .swiper-slide .agregar p {
+      font-weight: 600;
+      margin: 0; }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }

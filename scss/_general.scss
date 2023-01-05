@@ -174,7 +174,8 @@ main{
         }
         .categoria1{
             padding: 0 10%;
-            margin: 5% 0;
+            margin-top: 2%;
+            margin-bottom: 1%;
             .title{
                 display: grid;
                 grid-template-columns: 0.1fr 0.1fr 1fr 0.15fr;
@@ -202,85 +203,17 @@ main{
             .tres{
                 grid-template-columns: 0.1fr 0.1fr 1fr 0.18fr;  
             }
-            .contenido{
-                display: grid;
-                grid-template-rows: 1fr;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                gap: 10px;
-                margin-top: 20px;
-                .item{
-                    width: 100%;
-                    height: 400px;
-                    text-align: center;
-                    .cont{
-                        width: 100%;
-                        height: 100%;
-                        border: solid #34A560 1px;
-                        border-radius: 2%;
-                        display: grid;
-                        justify-items: center;
-                        align-items: center;;
-                        .img{
-                            width: 90%;
-                            height: 220px;
-                            img{
-                                width: 100%;
-                            }
-                        }
-                        h3{
-                            font-size: 18px;
-                            span{
-                                text-align: end;
-                            }
-                        }
-                    }
-                    .cont-text{
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        grid-template-rows: 1fr;
-                        grid-gap: 40px;
-                        align-items: center;
-                        justify-items: center;
-                        padding: 0 6%;
-                        p{
-                            margin-bottom: 0;
-                        }
-                        div{
-                            width: 150%;
-                            height: 40px;
-                            border-radius: 10px;
-                            color: $c4;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
-                        .precio{
-                            background-color:#eceef0 ;
-                            text-decoration:line-through;
-
-                        }
-                        .oferta{
-                            font-weight: 500;
-                            background-color: $c5;
-                        }
-                    }
-                    .agregar{
-                        background-color: transparent;
-                        border: $c5 solid 1px;
-                        width: 60%;
-                        padding: 5%;
-                        border-radius: 20px;
-                        color: $c5;
-                        p{
-                            font-weight: 600;
-                            margin: 0;
-                        }
-                    }
-                }
-            }
+            // .contenido{
+            //     display: grid;
+            //     grid-template-rows: 1fr;
+            //     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            //     gap: 10px;
+            //     margin-top: 20px;
+            // }   
         }
     }
 }
+
 
 footer{
     .contenedor{
@@ -409,3 +342,93 @@ footer{
         }
     }
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 0.1fr;
+    margin: 2% 0;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    .cont{
+        width: 100%;
+        height: 100%;
+        border: solid #34A560 1px;
+        border-radius: 2%;
+        display: grid;
+        justify-items: center;
+        align-items: center;;
+        .img{
+            width: 90%;
+            height: 220px;
+            margin: 10px 0px;
+            img{
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+        h3{
+            font-size: 18px;
+            span{
+                text-align: end;
+            }
+        }
+    }
+    .cont-text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 40px;
+        align-items: center;
+        justify-items: center;
+        padding: 0 6%;
+        margin-bottom: 10px;
+        p{
+            margin-bottom: 0;
+        }
+        div{
+            width: 150%;
+            height: 40px;
+            border-radius: 10px;
+            color: $c4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .precio{
+            background-color:#eceef0 ;
+            text-decoration:line-through;
+
+        }
+        .oferta{
+            font-weight: 500;
+            background-color: $c5;
+        }
+    }
+    .agregar{
+        background-color: transparent;
+        border: $c5 solid 1px;
+        width: 60%;
+        padding: 5%;
+        border-radius: 20px;
+        color: $c5;
+        margin-bottom: 15px;
+        p{
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+}
+
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

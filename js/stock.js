@@ -63,9 +63,49 @@ const sneakers =
         talle: "L",
         img: '../imagenes/products/rebook5.webp',
         cantidad:1
+    },
+
+    {
+        id: 6,
+        marca: "Umbro",
+        nombre: "Buzo 2",
+        tipo: "buzo",
+        desc: "Un buzo que re va con vos",
+        precio: 1200,
+        oferta: 790.99,
+        talle: "L",
+        img: '../imagenes/products/rebook5.webp',
+        cantidad:1
+    },
+
+    {
+        id: 7,
+        marca: "Umbro",
+        nombre: "Buzo 2",
+        tipo: "buzo",
+        desc: "Un buzo que re va con vos",
+        precio: 1200,
+        oferta: 790.99,
+        talle: "L",
+        img: '../imagenes/products/rebook5.webp',
+        cantidad:1
+    },
+
+    {
+        id: 8,
+        marca: "Umbro",
+        nombre: "Buzo 2",
+        tipo: "buzo",
+        desc: "Un buzo que re va con vos",
+        precio: 1200,
+        oferta: 790.99,
+        talle: "L",
+        img: '../imagenes/products/rebook5.webp',
+        cantidad:1
     }
 ];
 
+//NUEVO STOOOOOCK
 const gamer =
 [
     {
