@@ -343,6 +343,8 @@ footer{
     }
 }
 
+/*SWIPER SLIDES PRODUCTOS*/
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -418,6 +420,13 @@ footer{
         border-radius: 20px;
         color: $c5;
         margin-bottom: 15px;
+        &:hover{
+            cursor: pointer;
+            border: $c2 solid 1px;
+            background-color: $c2;
+            transition: ease-in-out 1s;
+            color: $c4;
+        }
         p{
             font-weight: 600;
             margin: 0;

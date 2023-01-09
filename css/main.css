@@ -246,6 +246,7 @@ footer .contenedor {
         width: 20%;
         padding-left: 10px; }
 
+/*SWIPER SLIDES PRODUCTOS*/
 .swiper {
   width: 100%;
   height: 100%;
@@ -309,6 +310,12 @@ footer .contenedor {
     border-radius: 20px;
     color: #29E197;
     margin-bottom: 15px; }
+    .swiper-slide .agregar:hover {
+      cursor: pointer;
+      border: #FCD462 solid 1px;
+      background-color: #FCD462;
+      transition: ease-in-out 1s;
+      color: white; }
     .swiper-slide .agregar p {
       font-weight: 600;
       margin: 0; }
