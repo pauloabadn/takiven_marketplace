@@ -86,7 +86,7 @@ header {
         header .subMenu .newsesion form .registrar {
           background-color: #FCD462; }
     header .subMenu .active {
-      transition: 1s ease-in-out;
+      transition: ease 2s;
       display: grid;
       grid-template-columns: 1fr; }
 
@@ -302,7 +302,7 @@ footer .contenedor {
     .swiper-slide .cont-text .oferta {
       font-weight: 500;
       background-color: #29E197; }
-  .swiper-slide .agregar {
+  .swiper-slide .btn-primary {
     background-color: transparent;
     border: #29E197 solid 1px;
     width: 60%;
@@ -310,13 +310,13 @@ footer .contenedor {
     border-radius: 20px;
     color: #29E197;
     margin-bottom: 15px; }
-    .swiper-slide .agregar:hover {
+    .swiper-slide .btn-primary:hover {
       cursor: pointer;
       border: #FCD462 solid 1px;
       background-color: #FCD462;
       transition: ease-in-out 1s;
       color: white; }
-    .swiper-slide .agregar p {
+    .swiper-slide .btn-primary p {
       font-weight: 600;
       margin: 0; }
 
@@ -325,3 +325,11 @@ footer .contenedor {
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.modal-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 2rem; }
+  .modal-contenedor .img-carrito {
+    width: 200px;
+    padding: 20px; }

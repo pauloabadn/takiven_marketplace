@@ -13,10 +13,19 @@ sneakers.forEach( producto => {
                                 <div class="precio"><p>S/${producto.precio}</p></div>
                                 <div class="oferta"><p>S/${producto.oferta}</p></div>
                             </div>
-                            <div class="agregar"><p>Agregar</p></div>
+                            <button id="agregar${producto.id} "class="btn btn-primary">Agregar</button>
     `;
     swcontenedor.appendChild(div);
+
+    // const boton = document.getElementById(`agregar${producto.id}`)
+
+    // boton.addEventListener('click', () => {
+    //     agregarAlcarrito(producto.id)
+    // })
+
 });
+
+
 
 const contgamer = document.getElementById('swgamer');
 gamer.forEach( producto => {
@@ -32,7 +41,7 @@ gamer.forEach( producto => {
                                 <div class="precio"><p>S/${producto.precio}</p></div>
                                 <div class="oferta"><p>S/${producto.oferta}</p></div>
                             </div>
-                            <div class="agregar"><p>Agregar</p></div>
+                            <button class="btn btn-primary" onclick="agregarProducto(${producto.id})">Agregar</button>
     `;
     swgamer.appendChild(div);
 });
@@ -51,7 +60,7 @@ smartphone.forEach( producto => {
                                 <div class="precio"><p>S/${producto.precio}</p></div>
                                 <div class="oferta"><p>S/${producto.oferta}</p></div>
                             </div>
-                            <div class="agregar"><p>Agregar</p></div>
+                            <button class="btn btn-primary" onclick="agregarProducto(${producto.id})">Agregar</button>
     `;
     swsmart.appendChild(div);
 });
@@ -70,7 +79,7 @@ computacion.forEach( producto => {
                                 <div class="precio"><p>S/${producto.precio}</p></div>
                                 <div class="oferta"><p>S/${producto.oferta}</p></div>
                             </div>
-                            <div class="agregar"><p>Agregar</p></div>
+                            <button class="btn btn-primary" onclick="agregarProducto(${producto.id})">Agregar</button>
     `;
     swcomputacion.appendChild(div);
 });
@@ -89,7 +98,7 @@ supermercado.forEach( producto => {
                                 <div class="precio"><p>S/${producto.precio}</p></div>
                                 <div class="oferta"><p>S/${producto.oferta}</p></div>
                             </div>
-                            <div class="agregar"><p>Agregar</p></div>
+                            <button id="agregar${producto.id}" class="btn btn-primary" onclick="agregarProducto(${producto.id})">Agregar</button>
     `;
     swsupermercado.appendChild(div);
 });
@@ -113,6 +122,15 @@ supermercado.forEach( producto => {
 //     swmascota.appendChild(div);
 // });
 
+let carrito = [];
+
+const agregarAlcarrito = (prodId) => {
+    const item1 = sneakers.find((prod) => prod.id === prodId)
+    carrito.push(item1)
+    console.log(carrito)
+}
+
+
 const burgerOpen = document.querySelector(".burgerOpen"),
       burgerClose = document.querySelector(".burgerClose"),
       menu = document.querySelector(".menu");
@@ -125,12 +143,10 @@ burgerClose.addEventListener("click" , () =>{
     menu.classList.remove("active");
 });
 
-body.addEventListener("click" , e =>{
-    let clickedElm = e.target;
+let userOpen = document.querySelector(".userOpen")
+    userMenu = document.querySelector(".newsesion")
 
-    if(!clickedElm.classList.contains("burgerOpen") && clickedElm.classList.contains("menu")){
-        menu.classList.remove("active");
-    }
+userOpen.addEventListener("click" , () =>{
+    userMenu.classList.add("active");
 });
-
 
